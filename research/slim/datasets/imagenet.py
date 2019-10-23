@@ -41,7 +41,7 @@ from datasets import dataset_utils
 slim = tf.contrib.slim
 
 # TODO(nsilberman): Add tfrecord file type once the script is updated.
-_FILE_PATTERN = '%s-*'
+_FILE_PATTERN = '%s'
 
 _SPLITS_TO_SIZES = {
     'train': 1281167,
@@ -60,7 +60,7 @@ _NUM_CLASSES = 1001
 
 # If set to false, will not try to set label_to_names in dataset
 # by reading them from labels.txt or github.
-LOAD_READABLE_NAMES = True
+LOAD_READABLE_NAMES = False
 
 
 def create_readable_names_for_imagenet_labels():
